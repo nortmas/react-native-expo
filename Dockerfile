@@ -1,4 +1,4 @@
-FROM node:13.8.0
+FROM node:13.8.0-alpine
 
 RUN npm install expo-cli --global
 
