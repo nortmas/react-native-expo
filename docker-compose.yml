@@ -3,9 +3,8 @@ version: '3'
 services:
   react_native_expo:
     image: 'nortmas/react-native-expo'
-    container_name: 'react-native-expo'
-    command: react-native-expo
+    command: react-native-expo-app
     ports:
       - 3000:3000
     volumes:
-      - ./react-native-expo:/project/react-native-expo
+      - ./react-native-expo-app:/react-native-expo-app

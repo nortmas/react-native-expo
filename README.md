@@ -13,12 +13,11 @@ If the application exists it just calls npm start.
     services:
       react_native_expo:
         image: 'nortmas/react-native-expo'
-        container_name: 'react-native-expo'
-        command: react-native-expo
+        command: <react-native-app>
         ports:
           - 3000:3000
         volumes:
-          - ./<react-native-app>:/project/<react-native-app>
+          - ./<react-native-app>:/<react-native-app>
     ```
 4) Replace `<react-native-app>` with your application folder name.
 5) Run `docker-compose up -d`
